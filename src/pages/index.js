@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Button } from '../components/Button/Button.js';
+import { Button } from '../components/Button/Button.tsx';
 import '../styles/index.css';
 
 function Index() {
@@ -18,9 +18,9 @@ function Index() {
       <Helmet>
         <title>Gatsby + Node.js (TypeScript) API</title>
       </Helmet>
-      <h1>Gatsby + Node.js (TypeScript) API</h1>
+      <h1>Components</h1>
       <div>
-        <Button>Test</Button>
+        <Button>Button Default</Button>
       </div>
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>

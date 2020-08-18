@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.css';
+import './Button.sass';
 
 export const Button = ({ label, ...props }) => {
   return (
     <button type="button" class="button" {...props}>
-      test: {label}
+      {props.children}
     </button>
-  );
+  )
 };
 
 Button.propTypes = {
