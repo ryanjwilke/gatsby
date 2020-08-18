@@ -16,13 +16,15 @@ function Index() {
   return (
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>Gatsby</title>
       </Helmet>
       <h1>Components</h1>
       <div>
         <Button>Button Default</Button>
       </div>
+
       <br />
+      
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
     </main>
