@@ -20,11 +20,12 @@ function Index() {
       </Helmet>
       <h1>Components</h1>
       <div>
-        <Button>Button Default</Button>
+        <Button>Button :: Primary</Button>
+        <Button type="secondary">Button :: Secondary</Button>
       </div>
 
       <br />
-      
+
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
     </main>
