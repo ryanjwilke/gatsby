@@ -16,6 +16,8 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "storybook:dev": "start-storybook -p 8001",
+    "storybook:build": "build-storybook"
   }
 }
