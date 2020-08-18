@@ -12,7 +12,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@now/node": "^1.3.0"
+    "@now/node": "^1.3.0",
+    "react-styleguidist": "^11.0.8",
+    "webpack": "^4.44.1"
   },
   "scripts": {
     "dev": "gatsby develop",
