@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Button } from 'src/components/Button/Button.js';
+import { Button } from '../components/Button/Button.js';
 import '../styles/index.css';
 
 function Index() {
@@ -19,6 +19,9 @@ function Index() {
         <title>Gatsby + Node.js (TypeScript) API</title>
       </Helmet>
       <h1>Gatsby + Node.js (TypeScript) API</h1>
+      <div>
+        <Button>Test</Button>
+      </div>
       <h2>
         Deployed with{' '}
         <a
@@ -50,7 +53,6 @@ function Index() {
       <br />
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
-      <Button>Test</Button>
     </main>
   );
 }

@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css';
 
-export const Button = ({ size, label, ...props }) => {
+export const Button = ({ label, ...props }) => {
   return (
-    <button type="button" {...props}>
-      {label}
+    <button type="button" class="button" {...props}>
+      test: {label}
     </button>
   );
 };
 
 Button.propTypes = {
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  size: 'medium',
   onClick: undefined,
 };
