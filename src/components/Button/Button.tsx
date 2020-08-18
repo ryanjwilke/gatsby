@@ -4,7 +4,7 @@ import './Button.sass';
 
 export const Button = ({ label, ...props }) => {
   return (
-    <button type="button" class="button" {...props}>
+    <button type="button" class="button" role="button" {...props}>
       {props.children}
     </button>
   )
