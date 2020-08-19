@@ -8,6 +8,10 @@ export const Button = ({ ...props }) => {
     'btn': true,
     'btn-primary': props.type == 'primary',
     'btn-secondary': props.type == 'secondary',
+    'btn-xs': props.size == 'xs',
+    'btn-sm': props.size == 'sm',
+    'btn-md': props.size == 'md',
+    'btn-lg': props.size == 'lg',
   });
 
   return (
@@ -19,10 +23,12 @@ export const Button = ({ ...props }) => {
 
 Button.propTypes = {
   type: PropTypes.string,
+  size: PropTypes.string,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   type: 'primary',
+  size: 'md',
   onClick: undefined,
 };
