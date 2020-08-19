@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layout/layout'
 import { Helmet } from 'react-helmet'
-import { Button } from '../../components/btn/btn'
+import { Button } from '../../components/button/button'
 import '../../styles/pages/index.sass'
 
 export default () => {
@@ -10,7 +10,7 @@ export default () => {
       <Helmet>
         <title>Buttons</title>
       </Helmet>
-      
+
       <h1>Buttons</h1>
       <h2>Size: X-Small</h2>
       <div className="example">
