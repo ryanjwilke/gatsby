@@ -1,0 +1,54 @@
+@import "../../styles/colors"
+
+.table,
+.thead,
+.tbody,
+.tr
+  display: grid
+
+.tr
+  grid-template-columns: 80px auto 80px 200px
+  border: 1px solid $gray-100
+  padding: 0 16px
+  text-align: left
+  .thead &
+    background: $gray-50
+    border-radius: 4px 4px 0 0
+  .tbody &
+    position: relative
+    transition: all 300ms ease
+    margin-top: -1px
+    &:hover
+      cursor: pointer
+      z-index: 10
+      border-color: $blue-200
+      box-shadow: 0 0 0 2px $blue-100
+      border-radius: 1px
+    &:last-child
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
+
+.th, .td
+  height: 48px
+  transition: all 300ms ease
+  padding: 0 8px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  line-height: 48px
+  &-right
+    text-align: right
+
+.td
+  color: $text-600
+  .tr:hover &
+    color: $text-700
+
+.th
+  font-weight: 500
+  font-size: 16px
+  color: $text-700
+  cursor: pointer
+  &:hover
+    color: $text-800
+    background-color: rgba($gray-100,.5)
