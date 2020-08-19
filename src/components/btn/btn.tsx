@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
-import './button.sass'
+import './btn.sass'
 
 export const Button = ({ ...props }) => {
   let btnClass = classNames({
