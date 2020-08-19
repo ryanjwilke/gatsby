@@ -1,5 +1,6 @@
 import React from 'react'
 import './table.sass'
+import classNames from 'classnames/bind'
 
 export function Table({ children }) {
   return (
@@ -33,17 +34,21 @@ export function Tr({ children }) {
   )
 }
 
-export function Th({ children }) {
+export function Th({ children, ...props }) {
+  props.className = classNames(props.className, 'th')
+
   return (
-    <th className="th">
+    <th {...props}>
       {children}
     </th>
   )
 }
 
-export function Td({ children }) {
+export function Td({ children, ...props }) {
+  props.className = classNames(props.className, 'td')
+
   return (
-    <td className="td">
+    <td {...props}>
       {children}
     </td>
   )

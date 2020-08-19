@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 import './button.sass'
 
 export const Button = ({ ...props }) => {
-  let btnClass = classNames({
+  props.className = classNames(props.className, {
     'btn': true,
     'btn-primary': props.type == 'primary',
     'btn-secondary': props.type == 'secondary',
@@ -13,10 +13,10 @@ export const Button = ({ ...props }) => {
     'btn-sm': props.size == 'sm',
     'btn-md': props.size == 'md',
     'btn-lg': props.size == 'lg',
-  });
+  })
 
   return (
-    <button type="button" className={btnClass} role="button" {...props}>
+    <button type="button" role="button" {...props}>
       {props.children}
     </button>
   )
