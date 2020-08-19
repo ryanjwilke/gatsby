@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <menu>
           <ul>
             <li><Link to="/">Overview</Link></li>
-            <li><Link to="/components/buttons">Components</Link></li>
+            <li><Link to="/components/">Components</Link></li>
             <li><Link to="#">Utilities</Link></li>
           </ul>
         </menu>

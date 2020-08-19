@@ -3,6 +3,7 @@ import Layout from '../../components/layout/layout'
 import { Table, Thead, Tbody, Tr, Th, Td } from '../../components/table/table'
 import { Helmet } from 'react-helmet'
 import traces from '../../data/traces.yml'
+import '../../styles/pages/shared.sass'
 
 export default () => {
   return (
@@ -10,6 +11,8 @@ export default () => {
       <Helmet>
         <title>Tables</title>
       </Helmet>
+
+      <h1>Tables</h1>
 
       <Table>
         <Thead>

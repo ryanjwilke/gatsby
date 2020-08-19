@@ -2,7 +2,8 @@ import React from 'react'
 import Layout from '../../components/layout/layout'
 import { Helmet } from 'react-helmet'
 import { Button } from '../../components/button/button'
-import '../../styles/pages/index.sass'
+import '../../styles/pages/shared.sass'
+import '../../styles/pages/components/buttons.sass'
 
 export default () => {
   return (
