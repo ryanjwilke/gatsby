@@ -1,0 +1,15 @@
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/charges
+  latency: 250ms
+  timestamp: 01-01-20 14:20:23.018
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/charges
+  latency: 250ms
+  timestamp: 01-01-20 14:20:23.018
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/charges
+  latency: 250ms
+  timestamp: 01-01-20 14:20:23.018
