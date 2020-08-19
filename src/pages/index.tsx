@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout/layout'
-import { Button } from '../components/button/button'
+import { Button } from '../components/button/button.tsx'
 import '../styles/pages/index.sass'
 
 export default () => {
