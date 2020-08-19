@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby',
+    title: 'Style Guide',
   },
   plugins: [
     `gatsby-plugin-sass`,

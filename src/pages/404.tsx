@@ -8,7 +8,7 @@ export default () => {
       <Helmet>
         <title>404 - Page Not Found</title>
       </Helmet>
-      <h1>404 - Page Note Found</h1>
+      <h1>404</h1>
     </Layout>
   );
 }
