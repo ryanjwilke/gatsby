@@ -1,9 +1,9 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Button } from '../components/Button/Button.tsx';
-import './index.sass';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { Button } from '../components/Button/Button.tsx'
+import '../styles/pages/index.sass'
 
-function Index() {
+export default () => {
   return (
     <main>
       <Helmet>
@@ -60,5 +60,3 @@ function Index() {
     </main>
   );
 }
-
-export default Index;
