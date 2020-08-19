@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby',
+    title: 'Style Guide',
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,

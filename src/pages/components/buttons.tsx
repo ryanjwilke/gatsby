@@ -1,14 +1,16 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Button } from '../components/Button/Button.tsx';
-import './index.sass';
+import React from 'react'
+import Layout from '../../components/layout/layout'
+import { Helmet } from 'react-helmet'
+import { Button } from '../../components/button/button'
+import '../../styles/pages/index.sass'
 
-function Index() {
+export default () => {
   return (
-    <main>
+    <Layout>
       <Helmet>
-        <title>Gatsby</title>
+        <title>Buttons</title>
       </Helmet>
+
       <h1>Buttons</h1>
       <h2>Size: X-Small</h2>
       <div className="example">
@@ -57,8 +59,6 @@ function Index() {
         &lt;Button type="secondary" size="lg"&gt;Secondary&lt;/Button&gt;<br />
         &lt;Button type="caution" size="lg"&gt;Caution&lt;/Button&gt;
       </code>
-    </main>
+    </Layout>
   );
 }
-
-export default Index;

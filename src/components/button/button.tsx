@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
-import './Button.sass';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames/bind'
+import './button.sass'
 
 export const Button = ({ ...props }) => {
   let btnClass = classNames({
@@ -20,16 +20,16 @@ export const Button = ({ ...props }) => {
       {props.children}
     </button>
   )
-};
+}
 
 Button.propTypes = {
   type: PropTypes.string,
   size: PropTypes.string,
   onClick: PropTypes.func,
-};
+}
 
 Button.defaultProps = {
   type: 'primary',
   size: 'md',
   onClick: undefined,
-};
+}
