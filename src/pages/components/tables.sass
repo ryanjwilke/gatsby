@@ -1,9 +1,5 @@
 @import "../../styles/colors"
 
-.table
-  // border: 1px solid $gray-100
-  border-radius: 4px
-
 .thead
   background: $gray-50
   border-radius: 4px 4px 0 0
@@ -32,8 +28,10 @@
 
 .th, .td
   height: 48px
-  color: $text-600
   transition: all 300ms ease
+
+.td
+  color: $text-600
   .tr:hover &
     color: $text-700
 
@@ -43,12 +41,6 @@
   color: $text-700
   cursor: pointer
   padding: 0 8px
-  border: 0 solid $gray-100
-  border-width: 1px 0
-  margin: -1px 0
-  position: relative
   &:hover
-    z-index: 10
-    color: $blue-600
-    background-color: $blue-100
-    border-color: $blue-200
+    color: $text-800
+    background-color: rgba($gray-100,.5)
