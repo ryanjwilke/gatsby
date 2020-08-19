@@ -8,6 +8,7 @@ export const Button = ({ ...props }) => {
     'btn': true,
     'btn-primary': props.type == 'primary',
     'btn-secondary': props.type == 'secondary',
+    'btn-caution': props.type == 'caution',
     'btn-xs': props.size == 'xs',
     'btn-sm': props.size == 'sm',
     'btn-md': props.size == 'md',
