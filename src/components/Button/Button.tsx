@@ -8,6 +8,7 @@ export const Button = ({ ...props }) => {
     'btn': true,
     'btn-primary': props.type == 'primary',
     'btn-secondary': props.type == 'secondary',
+    'btn-caution': props.type == 'caution',
     'btn-xs': props.size == 'xs',
     'btn-sm': props.size == 'sm',
     'btn-md': props.size == 'md',
@@ -15,7 +16,7 @@ export const Button = ({ ...props }) => {
   });
 
   return (
-    <button type="button" class={btnClass} role="button" {...props}>
+    <button type="button" className={btnClass} role="button" {...props}>
       {props.children}
     </button>
   )

@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Button } from '../components/Button/Button.tsx';
 import './index.sass';
 
 function Index() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
   return (
     <main>
       <Helmet>
@@ -20,33 +11,52 @@ function Index() {
       </Helmet>
       <h1>Buttons</h1>
       <h2>Size: X-Small</h2>
-      <div class="example">
-        <Button size="xs">Button :: Primary</Button>
-        <Button type="secondary" size="xs">Button :: Secondary</Button>
+      <div className="example">
+        <Button type="primary" size="xs">Primary</Button>
+        <Button type="secondary" size="xs">Secondary</Button>
+        <Button type="caution" size="xs">Caution</Button>
       </div>
+      <code className="code">
+        &lt;Button type="primary" size="xs"&gt;Primary&lt;/Button&gt;<br />
+        &lt;Button type="secondary" size="xs"&gt;Secondary&lt;/Button&gt;<br />
+        &lt;Button type="caution" size="xs"&gt;Caution&lt;/Button&gt;
+      </code>
 
       <h2>Size: Small</h2>
-      <div class="example">
-        <Button size="sm">Button :: Primary</Button>
-        <Button type="secondary" size="sm">Button :: Secondary</Button>
+      <div className="example">
+        <Button type="primary" size="sm">Primary</Button>
+        <Button type="secondary" size="sm">Secondary</Button>
+        <Button type="caution" size="sm">Caution</Button>
       </div>
+      <code className="code">
+        &lt;Button type="primary" size="sm"&gt;Primary&lt;/Button&gt;<br />
+        &lt;Button type="secondary" size="sm"&gt;Secondary&lt;/Button&gt;<br />
+        &lt;Button type="caution" size="sm"&gt;Caution&lt;/Button&gt;
+      </code>
 
-      <h2>Size: Medium</h2>
-      <div class="example">
-        <Button>Button :: Primary</Button>
-        <Button type="secondary">Button :: Secondary</Button>
+      <h2>Size: Medium (Default)</h2>
+      <div className="example">
+        <Button type="primary" size="md">Primary</Button>
+        <Button type="secondary" size="md">Secondary</Button>
+        <Button type="caution" size="md">Caution</Button>
       </div>
+      <code className="code">
+        &lt;Button type="primary" size="md"&gt;Primary&lt;/Button&gt;<br />
+        &lt;Button type="secondary" size="md"&gt;Secondary&lt;/Button&gt;<br />
+        &lt;Button type="caution" size="md"&gt;Caution&lt;/Button&gt;
+      </code>
 
       <h2>Size: Large</h2>
-      <div class="example">
-        <Button size="lg">Button :: Primary</Button>
-        <Button size="lg" type="secondary">Button :: Secondary</Button>
+      <div className="example">
+        <Button type="primary" size="lg">Primary</Button>
+        <Button type="secondary" size="lg">Secondary</Button>
+        <Button type="caution" size="lg">Caution</Button>
       </div>
-
-      <br />
-
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      <code className="code">
+        &lt;Button type="primary" size="lg"&gt;Primary&lt;/Button&gt;<br />
+        &lt;Button type="secondary" size="lg"&gt;Secondary&lt;/Button&gt;<br />
+        &lt;Button type="caution" size="lg"&gt;Caution&lt;/Button&gt;
+      </code>
     </main>
   );
 }
