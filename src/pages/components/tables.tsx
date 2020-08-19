@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/layout/layout'
 import { Helmet } from 'react-helmet'
 import './tables.sass'
-import traces from './traces.yml'
+import traces from '../../data/traces.yml'
 
 export default () => {
   return (
