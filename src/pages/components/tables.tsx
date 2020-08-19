@@ -11,26 +11,28 @@ export default () => {
         <title>Tables</title>
       </Helmet>
 
-      <div className="table">
-        <div className="thead">
-          <div className="th">Status</div>
-          <div className="th">Endpoint</div>
-          <div className="th">Latency</div>
-          <div className="th">Timestamp</div>
-        </div>
-        <div>
+      <table className="table">
+        <thead className="thead">
+          <tr className="tr">
+            <th className="th">Status</th>
+            <th className="th">Endpoint</th>
+            <th className="th">Latency</th>
+            <th className="th">Timestamp</th>
+          </tr>
+        </thead>
+        <tbody className="tbody">
           {traces.map((trace, index) => {
             return (
-              <div className="tr" key={index}>
-                <div className="td">{trace.status}</div>
-                <div className="td">{trace.endpoint}</div>
-                <div className="td">{trace.latency}</div>
-                <div className="td">{trace.timestamp}</div>
-              </div>
+              <tr className="tr" key={index}>
+                <td className="td">{trace.status}</td>
+                <td className="td">{trace.endpoint}</td>
+                <td className="td">{trace.latency}</td>
+                <td className="td">{trace.timestamp}</td>
+              </tr>
             )
           })}
-        </div>
-      </div>
+        </tbody>
+      </table>
     </Layout>
   );
 }

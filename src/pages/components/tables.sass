@@ -1,30 +1,32 @@
 @import "../../styles/colors"
 
-.thead
-  background: $gray-50
-  border-radius: 4px 4px 0 0
+.table
   display: grid
-  grid-template-columns: auto auto auto auto
-  border: 1px solid $gray-100
-  padding: 0 16px
+
+.tbody
+  display: grid
 
 .tr
-  border: 1px solid $gray-100
-  position: relative
   display: grid
+  border: 1px solid $gray-100
   grid-template-columns: auto auto auto auto
-  transition: all 300ms ease
   padding: 0 16px
-  margin-top: -1px
-  &:hover
-    cursor: pointer
-    z-index: 10
-    border-color: $blue-200
-    box-shadow: 0 0 0 2px $blue-100
-    border-radius: 1px
-  &:last-child
-    border-bottom-left-radius: 4px
-    border-bottom-right-radius: 4px
+  .thead &
+    background: $gray-50
+    border-radius: 4px 4px 0 0
+  .tbody &
+    position: relative
+    transition: all 300ms ease
+    margin-top: -1px
+    &:hover
+      cursor: pointer
+      z-index: 10
+      border-color: $blue-200
+      box-shadow: 0 0 0 2px $blue-100
+      border-radius: 1px
+    &:last-child
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
 
 .th, .td
   height: 48px
