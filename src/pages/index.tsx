@@ -1,11 +1,12 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Button } from '../components/Button/Button.tsx'
+import Layout from '../components/layout/layout'
+import { Button } from '../components/button/button'
 import '../styles/pages/index.sass'
 
 export default () => {
   return (
-    <main>
+    <Layout>
       <Helmet>
         <title>Gatsby</title>
       </Helmet>
@@ -57,6 +58,6 @@ export default () => {
         &lt;Button type="secondary" size="lg"&gt;Secondary&lt;/Button&gt;<br />
         &lt;Button type="caution" size="lg"&gt;Caution&lt;/Button&gt;
       </code>
-    </main>
+    </Layout>
   );
 }
