@@ -15,7 +15,7 @@ export const Button = ({ ...props }) => {
   });
 
   return (
-    <button type="button" class={btnClass} role="button" {...props}>
+    <button type="button" className={btnClass} role="button" {...props}>
       {props.children}
     </button>
   )

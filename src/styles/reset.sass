@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+input,
+textarea
+  background: none
+  &::placeholder
+    color: currentColor
+
+input,
+select,
+textarea
+  &:-webkit-autofill
+    &, &:hover, &:focus, &:active
+      color: currentColor
+      -webkit-text-fill-color: #323D48
+      transition: background-color 99999s ease-in-out 99999s
+
+html, body
+  height: 100%

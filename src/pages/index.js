@@ -20,25 +20,25 @@ function Index() {
       </Helmet>
       <h1>Buttons</h1>
       <h2>Size: X-Small</h2>
-      <div class="example">
+      <div className="example">
         <Button size="xs">Button :: Primary</Button>
         <Button type="secondary" size="xs">Button :: Secondary</Button>
       </div>
 
       <h2>Size: Small</h2>
-      <div class="example">
+      <div className="example">
         <Button size="sm">Button :: Primary</Button>
         <Button type="secondary" size="sm">Button :: Secondary</Button>
       </div>
 
       <h2>Size: Medium</h2>
-      <div class="example">
+      <div className="example">
         <Button>Button :: Primary</Button>
         <Button type="secondary">Button :: Secondary</Button>
       </div>
 
       <h2>Size: Large</h2>
-      <div class="example">
+      <div className="example">
         <Button size="lg">Button :: Primary</Button>
         <Button size="lg" type="secondary">Button :: Secondary</Button>
       </div>
