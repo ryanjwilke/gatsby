@@ -5,11 +5,26 @@
   timestamp: 01-01-20 14:20:23.018
 -
   status: 200
-  endpoint: GET api.stripe.com/v1/charges
-  latency: 250ms
+  endpoint: GET api.stripe.com/v1/balance
+  latency: 318ms
   timestamp: 01-01-20 14:20:23.018
 -
   status: 200
-  endpoint: GET api.stripe.com/v1/charges
-  latency: 250ms
+  endpoint: POST api.stripe.com/v1/balance
+  latency: 182ms
+  timestamp: 01-01-20 14:20:23.018
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/balance_transactions
+  latency: 293ms
+  timestamp: 01-01-20 14:20:23.018
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/customers
+  latency: 192ms
+  timestamp: 01-01-20 14:20:23.018
+-
+  status: 200
+  endpoint: GET api.stripe.com/v1/disputes
+  latency: 202ms
   timestamp: 01-01-20 14:20:23.018
