@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import './layout.sass'
 
 export default function Layout({ children }) {
@@ -8,9 +9,9 @@ export default function Layout({ children }) {
         <h6>Design System</h6>
         <menu>
           <ul>
-            <li><a href="/">Overview</a></li>
-            <li><a href="/components/buttons">Components</a></li>
-            <li><a href="#">Utilities</a></li>
+            <li><Link to="/">Overview</Link></li>
+            <li><Link to="/components/buttons">Components</Link></li>
+            <li><Link to="#">Utilities</Link></li>
           </ul>
         </menu>
       </nav>

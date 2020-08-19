@@ -8,8 +8,9 @@ export default () => {
   return (
     <Layout>
       <Helmet>
-        <title>Gatsby</title>
+        <title>Buttons</title>
       </Helmet>
+      
       <h1>Buttons</h1>
       <h2>Size: X-Small</h2>
       <div className="example">
