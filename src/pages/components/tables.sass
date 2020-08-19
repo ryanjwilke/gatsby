@@ -3,14 +3,16 @@
 .table
   display: grid
 
+.thead,
 .tbody
   display: grid
 
 .tr
   display: grid
+  grid-template-columns: 80px auto 80px 200px
   border: 1px solid $gray-100
-  grid-template-columns: auto auto auto auto
   padding: 0 16px
+  text-align: left
   .thead &
     background: $gray-50
     border-radius: 4px 4px 0 0
@@ -31,6 +33,12 @@
 .th, .td
   height: 48px
   transition: all 300ms ease
+  padding: 0 8px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  &-right
+    text-align: right
 
 .td
   color: $text-600
@@ -42,7 +50,6 @@
   font-size: 16px
   color: $text-700
   cursor: pointer
-  padding: 0 8px
   &:hover
     color: $text-800
     background-color: rgba($gray-100,.5)

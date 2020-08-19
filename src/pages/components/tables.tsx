@@ -16,8 +16,8 @@ export default () => {
           <tr className="tr">
             <th className="th">Status</th>
             <th className="th">Endpoint</th>
-            <th className="th">Latency</th>
-            <th className="th">Timestamp</th>
+            <th className="th th-right">Latency</th>
+            <th className="th th-right">Time</th>
           </tr>
         </thead>
         <tbody className="tbody">
@@ -26,8 +26,8 @@ export default () => {
               <tr className="tr" key={index}>
                 <td className="td">{trace.status}</td>
                 <td className="td">{trace.endpoint}</td>
-                <td className="td">{trace.latency}</td>
-                <td className="td">{trace.timestamp}</td>
+                <td className="td th-right">{trace.latency}</td>
+                <td className="td th-right">{trace.timestamp}</td>
               </tr>
             )
           })}
